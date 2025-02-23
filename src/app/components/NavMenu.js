@@ -14,8 +14,6 @@ import {
   Typography,
 } from '@mui/material';
 
-import { OptionZeroLogo } from './Logo';
-
 const menuItems = [
     { title: 'Services', anchor: '#services-section' },
     { title: 'About Us', anchor: '#about-section' },
@@ -102,7 +100,7 @@ const ExpandedMenu = () => {
     );
 };
 
-function ResponsiveAppBar() {
+function NavMenu() {
     return (
         <AppBar
             position="static"
@@ -113,11 +111,10 @@ function ResponsiveAppBar() {
             }}
         >
             <Toolbar disableGutters sx={{ display: 'flex', margin: '0 40px' }}>
-                <OptionZeroLogo />
                 <HamburgerMenu />
                 <ExpandedMenu />
             </Toolbar>
         </AppBar>
     );
 }
-export default ResponsiveAppBar;
+export default NavMenu;
